@@ -18,7 +18,7 @@ Numbers
 
 [**Prime Factorization**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/PrimeFact.java) – Have the user enter a number and find all Prime Factors (if there are any) and display them.
 
-[**Next Prime Number**]() – Have the program find prime numbers until the user chooses to stop asking for the next one.
+[**Next Prime Number**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/NextPrime.java) – Have the program find prime numbers until the user chooses to stop asking for the next one.
 
 [**Find Cost of Tile to Cover W x H Floor**]() – Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user.
 
