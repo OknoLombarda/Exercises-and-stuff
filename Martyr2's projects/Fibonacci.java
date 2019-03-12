@@ -16,5 +16,6 @@ public class Fibonacci
 			num[i] = num[i - 1] + num[i - 2];
 			System.out.println(num[i]);
 		}
+		in.close();
 	}
 }
