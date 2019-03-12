@@ -12,7 +12,7 @@ Trying to complete all projects from [Martyr2’s Mega Project List](http://www.
 Numbers
 ---------
 
-**Find PI to the Nth Digit** – Enter a number and have the program generate PI up to that many decimal places. Keep a limit to how far the program will go.
+[**Find PI to the Nth Digit**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/FindPI.java) – Enter a number and have the program generate PI up to that many decimal places. Keep a limit to how far the program will go.
 
 [**Fibonacci Sequence**]() – Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.
 
