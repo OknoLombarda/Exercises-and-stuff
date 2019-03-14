@@ -19,5 +19,6 @@ public class MortCalc
 		System.out.print("Interest rate: ");
 		double interestRate = in.nextDouble();
 		System.out.println("You will have to pay " + NumberFormat.getCurrencyInstance().format((double)bsum / (double)term * (100 + interestRate) / 100) + " a month");
+		in.close();
 	}
 }
