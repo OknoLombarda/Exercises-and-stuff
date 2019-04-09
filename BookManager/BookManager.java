@@ -17,11 +17,17 @@ public class BookManager
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		clearScreen();
 		System.out.println();
-		System.out.println("1 - Change string\n2 - Manage books\n3 - Exit");
+		System.out.println("1 - Change string\n2 - Manage books\n3 - Backup files\n4 - Load files from backup\n5 - Exit\n");
 		String inp = in.readLine();
 		int input = Integer.valueOf(inp);
-		if (input == 3)
+		if (input == 5)
 			System.exit(0);
+		
+		if (input == 3)
+			BMTools.backupFiles();
+		
+		if (input == 4)
+			BMTools.loadFromBackup();
 		
 		if (input == 1)
 		{
@@ -30,22 +36,22 @@ public class BookManager
 			String oldString = in.readLine();
 			System.out.print("New string: ");
 			String newString = in.readLine();
-			PathReplacer.replace(oldString, newString);
+			BMTools.replace(oldString, newString);
 		}
 		if (input == 2)
 		{
-			PathReplacer.loadSave();
-			int saveIndex = PathReplacer.getSaveValue() - 1;
-			for (int i = PathReplacer.getSaveValue(); i < PathReplacer.amount(); i++)
+			BMTools.loadSave();
+			int saveIndex = BMTools.getSaveValue() - 1;
+			for (int i = BMTools.getSaveValue(); i < BMTools.amount(); i++)
 			{
 				saveIndex++;
 				clearScreen();
-				PathReplacer.getText(i);
+				BMTools.getText(i);
 				System.out.print("\nDelete this book? ");
 				String ans = in.readLine();
 				if (ans.toLowerCase().equals("y"))
 				{
-					PathReplacer.delete(i);
+					BMTools.delete(i);
 					saveIndex--;
 				}
 				if (ans.toLowerCase().equals("n"))
