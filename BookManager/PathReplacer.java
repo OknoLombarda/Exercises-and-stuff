@@ -6,16 +6,15 @@ import java.io.File;
 
 class PathReplacer
 {
-	private static File ExpBooks = new File("/home/oknolombarda/git/Exercises-and-stuff/BookManager/bin/BookExport");
+	private static File ExpBooks = new File("/home/oknolombarda/eclipse-workspace/BookManager/BookExport");
 	private static File[] list = ExpBooks.listFiles();
 	private static int startFrom;
 	
-	static
+	public static void loadSave() throws IOException
 	{
-		Scanner sF = new Scanner("/home/oknolombarda/git/Exercises-and-stuff/BookManager/bin/save.txt");
+		Scanner sF = new Scanner(Paths.get("/home/oknolombarda/eclipse-workspace/BookManager/save.txt"), "UTF-8");
 		String temp = sF.next();
-		//Работает неправильно
-		startFrom = (int)temp.charAt(0);
+		startFrom = Integer.valueOf(temp);
 		sF.close();
 	}
 	
@@ -24,17 +23,17 @@ class PathReplacer
 		return startFrom;
 	}
 	
-	public static void replace(String newPath) throws IOException
+	public static void replace(String oldString, String newString) throws IOException
 	{
 		for(int i = 0; i < list.length; i++) {
 			Scanner in = new Scanner(Paths.get(list[i].getAbsolutePath()), "UTF-8");
 			String check;
-			PrintWriter out = new PrintWriter("/home/oknolombarda/git/Exercises-and-stuff/BookManager/bin/replaced/" + list[i].getName(), "UTF-8");
+			PrintWriter out = new PrintWriter("/home/oknolombarda/eclipse-workspace/BookManager/replaced/" + list[i].getName(), "UTF-8");
 			while(in.hasNextLine())
 			{
 				check = in.nextLine();
-				if (check.contains("img://Textures/Interface/Books/Illuminated_Letters/"))
-					check = check.replace("img://Textures/Interface/Books/Illuminated_Letters/", newPath);
+				if (check.contains(oldString))
+					check = check.replace(oldString, newString);
 				out.println(check);
 			}
 			in.close();
