@@ -45,7 +45,6 @@ public class BookManager
 				String ans = in.readLine();
 				if (ans.toLowerCase().equals("y"))
 				{
-					//Возможно, работает неправильно
 					PathReplacer.delete(i);
 					saveIndex--;
 				}
@@ -56,7 +55,6 @@ public class BookManager
 				if (ans.toLowerCase().equals("q"))
 				{
 					PrintWriter save = new PrintWriter("/home/oknolombarda/eclipse-workspace/BookManager/save.txt");
-					//Не работает, надо чем-то заменить
 					save.print(saveIndex);
 					save.close();
 					break;
