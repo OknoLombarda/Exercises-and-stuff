@@ -1,7 +1,3 @@
-# Exercises-and-stuff
-I'm gonna store my stuff here.
-Probably I won't, actually
-
 ## Martyr2’s Mega Project List
 
 
