@@ -1,4 +1,4 @@
-## EnglishPractising
+## EnglishPracticing
 This program's purpose is to learn English words.
 Current state: _in development_
 
