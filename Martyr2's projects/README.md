@@ -25,7 +25,7 @@ Numbers
 
 [**Calculator**](https://github.com/OknoLombarda/Exercises-and-stuff/tree/master/Martyr2's%20projects/ScientificCalculator) – A simple calculator to do basic operators. Make it a scientific calculator for added complexity.
 
-**Unit Converter (temp, currency, volume, mass and more)** – Converts various units between one another. The user enters the type of unit being entered, the type of unit they want to convert to and then the value. The program will then make the conversion.
+[**Unit Converter (temp, currency, volume, mass and more)**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/UnitConverter.java) – Converts various units between one another. The user enters the type of unit being entered, the type of unit they want to convert to and then the value. The program will then make the conversion.
 
 **Alarm Clock** – A simple clock where it plays a sound after X number of minutes/seconds or at a particular time.
 
