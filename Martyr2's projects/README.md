@@ -94,7 +94,7 @@ Text
 
 **Fortune Teller (Horoscope)** – A program that checks your horoscope on various astrology sites and puts them together for you each day.
 
-[**Vigenere / Vernam / Ceasar Ciphers**]() – Functions for encrypting and decrypting data messages. Then send them to a friend. - Incomplete
+**Vigenere / Vernam / Ceasar Ciphers** – Functions for encrypting and decrypting data messages. Then send them to a friend. - Incomplete
 
 **Random Gift Suggestions** – Enter various gifts for certain people when you think of them. When its time to give them a gift (xmas, birthday, anniversary) it will randomly pick one and perhaps places you can get it.
 
@@ -104,14 +104,14 @@ Text
 
 **Regex Query Tool** – A tool that allows the user to enter a text string and then in a separate control enter a regex pattern. It will run the regular exp****ression against the source text and return any matches or flag errors in the regular exp****ression.
 
-[**Forty Days of Dating Scraper**]() - A small script that fetches date from the fortydaysofdating.com website and opens a new tab on the default browser as soon as a new post is posted.
+**Forty Days of Dating Scraper** - A small script that fetches date from the fortydaysofdating.com website and opens a new tab on the default browser as soon as a new post is posted.
 
 Networking
 ---------
 
 **FTP Program** – A file transfer program which can transfer files back and forth from a remote web sever.
 
-[**Get Atomic Time from Internet Clock**]() – This program will get the true atomic time from an atomic time clock on the Internet. There are various clocks across the world. Do a search for a list of them.
+**Get Atomic Time from Internet Clock** – This program will get the true atomic time from an atomic time clock on the Internet. There are various clocks across the world. Do a search for a list of them.
 
 **Chat Application (IRC or MSN Style)** – Create a chat application that can create simple chat rooms like on Internet Relay Chat (IRC) or a more direct chatting style like MSN. For added complexity, create your own protocol to facilitate this chatting.
 
@@ -164,7 +164,7 @@ Classes
 
 **Chart Making Class / API** – Create a class, or a set of classes, that generates bar charts, pie charts, histograms, and scatter plot charts. For added complexity, make this a service where people can connect to a web server, supply information and it returns a chart image for them in gif or jpg format.
 
-[**Shape Area and Perimeter Classes**]() – Create an abstract class called “Shape” and then inherit from it other shapes like diamond, rectangle, circle, triangle etc. Then have each class override the area and perimeter functionality to handle each shape type.
+**Shape Area and Perimeter Classes** – Create an abstract class called “Shape” and then inherit from it other shapes like diamond, rectangle, circle, triangle etc. Then have each class override the area and perimeter functionality to handle each shape type.
 
 **Matrix Class** – A class to manage matrices. Add, subtract and multiple matrices.
 
@@ -251,7 +251,7 @@ Files
 
 **Image Map Generator** – Image maps are those images on the web that have multiple hover points that link to different pages. Such images may include maps or splash pages. See if you can make one where the user specifies an image, clicks hotspots in the image and specify links. It will then generate the HTML code to a file that the user can then copy and paste into their website to make the image map.
 
-[**File Copy Utility**]() – Create a utility that can do bulk file copying and backups of other files. - Incomplete
+**File Copy Utility** – Create a utility that can do bulk file copying and backups of other files.
 
 **Code Snippet Manager** – Another utility program that allows coders to put in functions, classes or other tidbits to save for use later. Organized by the type of snippet or language the coder can quickly look up code. For extra practice try adding syntax highlighting based on the language.
 
@@ -330,7 +330,7 @@ Games
 
 **Chess and Checkers** – Simply put a game of chess or checkers. Try to make it playable online and if you can use a graphical user interface that can also undo or redo a step as well as keep a history of moves for replay.
 
-[**Hangman**]() – Randomly select a word from a file, have the user guess characters in the word. For each character they guess that is not in the word, have it draw another part of a man hanging in a noose. If the picture is completed before they guess all the characters, they lose. - Incomplete
+**Hangman** – Randomly select a word from a file, have the user guess characters in the word. For each character they guess that is not in the word, have it draw another part of a man hanging in a noose. If the picture is completed before they guess all the characters, they lose.
 
 **Crossword Puzzle** – Create a crossword puzzle which links words together on common letters. Provide a list of clues for each word and let the user enter fill in the words until the entire crossword is filled in.
 
