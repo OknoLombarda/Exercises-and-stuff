@@ -48,7 +48,7 @@ Classic Algorithms
 
 [**Collatz Conjecture**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/CollatzConjecture.java) - Start with a number *n > 1*. Find the number of steps it takes to reach one using the following process: If *n* is even, divide it by 2. If *n* is odd, multiply it by 3 and add 1.
 
-**Sorting** - Implement two types of sorting algorithms: Merge sort and bubble sort.
+[**Sorting**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/SortingTools.java) - Implement two types of sorting algorithms: Merge sort and bubble sort.
 
 **Closest pair problem** - The closest pair of points problem or closest pair problem is a problem of computational geometry: given *n* points in metric space, find a pair of points with the smallest distance between them.
 
