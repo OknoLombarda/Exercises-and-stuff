@@ -24,17 +24,12 @@ public class ClosestPair {
 		for (int i = 0; i < n; i++)
 			points.add(new Point(Math.abs(rand.nextInt()) % 400, Math.abs(rand.nextInt()) % 400));
 		
-		int minDist = -1;
+		int minDist = Integer.MAX_VALUE;
 		int[] indexes = new int[2];
-		for (int i = 1; i < n - 1; i++)
+		for (int i = 0; i < n - 1; i++)
 			for (int j = i + 1; j < n; j++) {
 				int distance = getDistance(points.get(i), points.get(j));
-				if (minDist == -1) {
-					minDist = distance;
-					indexes[0] = i;
-					indexes[1] = j;
-				}
-				else if (distance < minDist) {
+				if (distance < minDist) {
 					minDist = distance;
 					indexes[0] = i;
 					indexes[1] = j;
