@@ -7,48 +7,48 @@ Trying to complete all projects from [Martyr2’s Mega Project List](http://www.
 Numbers
 ---------
 
-[**Find PI to the Nth Digit**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/FindPI.java) – Enter a number and have the program generate PI up to that many decimal places. Keep a limit to how far the program will go.
+[**Find PI to the Nth Digit**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/FindPI.java) – Enter a number and have the program generate PI up to that many decimal places. Keep a limit to how far the program will go.
 
-[**Fibonacci Sequence**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Fibonacci.java) – Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.
+[**Fibonacci Sequence**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/Fibonacci.java) – Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.
 
-[**Prime Factorization**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/PrimeFact.java) – Have the user enter a number and find all Prime Factors (if there are any) and display them.
+[**Prime Factorization**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/PrimeFact.java) – Have the user enter a number and find all Prime Factors (if there are any) and display them.
 
-[**Next Prime Number**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/NextPrime.java) – Have the program find prime numbers until the user chooses to stop asking for the next one.
+[**Next Prime Number**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/NextPrime.java) – Have the program find prime numbers until the user chooses to stop asking for the next one.
 
-[**Find Cost of Tile to Cover W x H Floor**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/TileCost.java) – Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user.
+[**Find Cost of Tile to Cover W x H Floor**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/TileCost.java) – Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user.
 
-[**Mortgage Calculator**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/MortCalc.java) – Calculate the monthly payments of a fixed term mortgage over given Nth terms at a given interest rate. Also figure out how long it will take the user to pay back the loan.
+[**Mortgage Calculator**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/MortCalc.java) – Calculate the monthly payments of a fixed term mortgage over given Nth terms at a given interest rate. Also figure out how long it will take the user to pay back the loan.
 
-[**Change Return Program**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/ChangeReturn.java) – The user enters a cost and then the amount of money given. The program will figure out the change and the number of quarters, dimes, nickels, pennies needed for the change.
+[**Change Return Program**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/ChangeReturn.java) – The user enters a cost and then the amount of money given. The program will figure out the change and the number of quarters, dimes, nickels, pennies needed for the change.
 
-[**Binary to Decimal and Back Converter**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/BinaryConverter.java) – Develop a converter to convert a decimal number to binary or a binary number to its decimal equivalent.
+[**Binary to Decimal and Back Converter**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/BinaryConverter.java) – Develop a converter to convert a decimal number to binary or a binary number to its decimal equivalent.
 
-[**Calculator**](https://github.com/OknoLombarda/Exercises-and-stuff/tree/master/Martyr2's%20projects/ScientificCalculator) – A simple calculator to do basic operators. Make it a scientific calculator for added complexity.
+[**Calculator**](https://github.com/OknoLombarda/Exercises-and-stuff/tree/master/Martyr2's%20projects/Files/ScientificCalculator) – A simple calculator to do basic operators. Make it a scientific calculator for added complexity.
 
-[**Unit Converter (temp, currency, volume, mass and more)**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/UnitConverter.java) – Converts various units between one another. The user enters the type of unit being entered, the type of unit they want to convert to and then the value. The program will then make the conversion.
+[**Unit Converter (temp, currency, volume, mass and more)**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/UnitConverter.java) – Converts various units between one another. The user enters the type of unit being entered, the type of unit they want to convert to and then the value. The program will then make the conversion.
 
 **Alarm Clock** – A simple clock where it plays a sound after X number of minutes/seconds or at a particular time.
 
 **Distance Between Two Cities** – Calculates the distance between two cities and allows the user to specify a unit of distance. This program may require finding coordinates for the cities like latitude and longitude.
 
-[**Credit Card Validator**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/CardValidator.java) – Takes in a credit card number from a common credit card vendor (Visa, MasterCard, American Express, Discoverer) and validates it to make sure that it is a valid number (look into how credit cards use a checksum).
+[**Credit Card Validator**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/CardValidator.java) – Takes in a credit card number from a common credit card vendor (Visa, MasterCard, American Express, Discoverer) and validates it to make sure that it is a valid number (look into how credit cards use a checksum).
 
-[**Tax Calculator**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/TaxCalculator.java) – Asks the user to enter a cost and either a country or state tax. It then returns the tax plus the total cost with tax.
+[**Tax Calculator**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/TaxCalculator.java) – Asks the user to enter a cost and either a country or state tax. It then returns the tax plus the total cost with tax.
 
-[**Factorial Finder**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/FactorialFinder.java) - The Factorial of a positive integer, n, is defined as the product of the sequence n, n-1, n-2, ...1 and the factorial of zero, 0, is defined as being 1. Solve this using both loops and recursion.
+[**Factorial Finder**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/FactorialFinder.java) - The Factorial of a positive integer, n, is defined as the product of the sequence n, n-1, n-2, ...1 and the factorial of zero, 0, is defined as being 1. Solve this using both loops and recursion.
 
-[**Complex Number Algebra**](https://github.com/OknoLombarda/Exercises-and-stuff/tree/master/Martyr2's%20projects/ComplexAlgebra) - Show addition, multiplication, negation, and inversion of complex numbers in separate functions. (Subtraction and division operations can be made with pairs of these operations.) Print the results for each operation tested.
+[**Complex Number Algebra**](https://github.com/OknoLombarda/Exercises-and-stuff/tree/master/Martyr2's%20projects/Files/ComplexAlgebra) - Show addition, multiplication, negation, and inversion of complex numbers in separate functions. (Subtraction and division operations can be made with pairs of these operations.) Print the results for each operation tested.
 
-[**Happy Numbers**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/HappyNumbers.java) - A happy number is defined by the following process. Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers, while those that do not end in 1 are unhappy numbers. Take an input number from user, and find first 8 happy numbers from that input.
+[**Happy Numbers**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/HappyNumbers.java) - A happy number is defined by the following process. Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers, while those that do not end in 1 are unhappy numbers. Take an input number from user, and find first 8 happy numbers from that input.
 
-[**Number Names**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/NumberNames.java) - Show how to spell out a number in English. You can use a preexisting implementation or roll your own, but you should support inputs up to at least one million (or the maximum value of your language's default bounded integer type, if that's less). *Optional: Support for inputs other than positive integers (like zero, negative integers, and floating-point numbers).*
+[**Number Names**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/NumberNames.java) - Show how to spell out a number in English. You can use a preexisting implementation or roll your own, but you should support inputs up to at least one million (or the maximum value of your language's default bounded integer type, if that's less). *Optional: Support for inputs other than positive integers (like zero, negative integers, and floating-point numbers).*
 
 Classic Algorithms
 -----------------
 
-[**Collatz Conjecture**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/CollatzConjecture.java) - Start with a number *n > 1*. Find the number of steps it takes to reach one using the following process: If *n* is even, divide it by 2. If *n* is odd, multiply it by 3 and add 1.
+[**Collatz Conjecture**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/CollatzConjecture.java) - Start with a number *n > 1*. Find the number of steps it takes to reach one using the following process: If *n* is even, divide it by 2. If *n* is odd, multiply it by 3 and add 1.
 
-[**Sorting**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/SortingTools.java) - Implement two types of sorting algorithms: Merge sort and bubble sort.
+[**Sorting**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/SortingTools.java) - Implement two types of sorting algorithms: Merge sort and bubble sort.
 
 **Closest pair problem** - The closest pair of points problem or closest pair problem is a problem of computational geometry: given *n* points in metric space, find a pair of points with the smallest distance between them.
 
@@ -70,15 +70,15 @@ Graphs
 Text
 ---------
 
-[**Reverse a String**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/ReverseString.java) – Enter a string and the program will reverse it and print it out.
+[**Reverse a String**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/ReverseString.java) – Enter a string and the program will reverse it and print it out.
 
-[**Pig Latin**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/PigLatin.java) – Pig Latin is a game of alterations played on the English language game. To create the Pig Latin form of an English word the initial consonant sound is transposed to the end of the word and an ay is affixed (Ex.: "banana" would yield anana-bay). Read Wikipedia for more information on rules.
+[**Pig Latin**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/PigLatin.java) – Pig Latin is a game of alterations played on the English language game. To create the Pig Latin form of an English word the initial consonant sound is transposed to the end of the word and an ay is affixed (Ex.: "banana" would yield anana-bay). Read Wikipedia for more information on rules.
 
-[**Count Vowels**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/CountVowels.java) – Enter a string and the program counts the number of vowels in the text. For added complexity have it report a sum of each vowel found.
+[**Count Vowels**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/CountVowels.java) – Enter a string and the program counts the number of vowels in the text. For added complexity have it report a sum of each vowel found.
 
-[**Check if Palindrome**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/CheckPalindrome.java) – Checks if the string entered by the user is a palindrome. That is that it reads the same forwards as backwards like “racecar”
+[**Check if Palindrome**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/CheckPalindrome.java) – Checks if the string entered by the user is a palindrome. That is that it reads the same forwards as backwards like “racecar”
 
-[**Count Words in a String**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/CountWords.java) – Counts the number of individual words in a string. For added complexity read these strings in from a text file and generate a summary.
+[**Count Words in a String**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/CountWords.java) – Counts the number of individual words in a string. For added complexity read these strings in from a text file and generate a summary.
 
 **Text Editor** – Notepad style application that can open, edit, and save text documents. Add syntax highlighting and other features.
 
