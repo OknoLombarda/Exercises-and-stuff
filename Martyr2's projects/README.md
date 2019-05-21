@@ -50,7 +50,7 @@ Classic Algorithms
 
 [**Sorting**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/SortingTools.java) - Implement two types of sorting algorithms: Merge sort and bubble sort.
 
-**Closest pair problem** - The closest pair of points problem or closest pair problem is a problem of computational geometry: given *n* points in metric space, find a pair of points with the smallest distance between them.
+[**Closest pair problem**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/ClosestPair.java) - The closest pair of points problem or closest pair problem is a problem of computational geometry: given *n* points in metric space, find a pair of points with the smallest distance between them.
 
 **Sieve of Eratosthenes** - The sieve of Eratosthenes is one of the most efficient ways to find all of the smaller primes (below 10 million or so).
 
