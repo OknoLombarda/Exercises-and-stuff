@@ -24,9 +24,9 @@ public class BMTools {
 		String path = new File(BMTools.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getPath();
 		path = path.replace("BookManager.jar", "");
 		save = new File(path + "save.txt");
-		expBooks = new File(path + "BookExport");
+		expBooks = new File(path + "BookExport/");
 		list = expBooks.listFiles();
-		backup = new File(path + "backup");
+		backup = new File(path + "backup/");
 		bpFiles = backup.listFiles();
 	}
 	
@@ -77,14 +77,17 @@ public class BMTools {
 			for (File f : bpFiles)
 				f.delete();
 		for (File f : list)
-			Files.copy(Paths.get(f.getAbsolutePath()), Paths.get("backup/" + f.getName()));
+			Files.copy(Paths.get(f.getAbsolutePath()), Paths.get(backup.getAbsolutePath().concat("/")
+																						 .concat(f.getName())));
+		bpFiles = backup.listFiles();
 	}
 
 	public static void loadFromBackup() throws IOException {
 		for (File f : list)
 			f.delete();
 		for (File f : bpFiles)
-			Files.copy(Paths.get(f.getAbsolutePath()), Paths.get("BookExport/" + f.getName()));
+			Files.copy(Paths.get(f.getAbsolutePath()), Paths.get(expBooks.getAbsolutePath().concat("/")
+					                                                                       .concat(f.getName())));
 		list = expBooks.listFiles();
 		iter = 0;
 	}
@@ -92,17 +95,15 @@ public class BMTools {
 	public static void replace(String oldString, String newString) throws IOException {
 		for (int i = 0; i < list.length; i++) {
 			Scanner in = new Scanner(Paths.get(list[i].getAbsolutePath()), "UTF-8");
-			ArrayList<String> tempBook = new ArrayList<>();
+			ArrayList<String> book = new ArrayList<>();
 			String check;
 			while (in.hasNextLine()) {
 				check = in.nextLine();
 				if (check.contains(oldString))
 					check = check.replace(oldString, newString);
-				tempBook.add(check);
+				book.add(check);
 			}
-			String[] book = new String[tempBook.size()];
-			tempBook.toArray(book);
-			PrintWriter out = new PrintWriter(new FileWriter("BookExport/" + list[i].getName(), false));
+			PrintWriter out = new PrintWriter(new FileWriter(list[i].getAbsolutePath(), false));
 			for (String s : book)
 				out.println(s);
 			in.close();
