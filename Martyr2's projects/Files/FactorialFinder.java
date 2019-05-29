@@ -28,4 +28,13 @@ public class FactorialFinder
 		}
 		return num;
 	}
+	
+	public static BigInteger findFactorial(BigInteger num) {
+		if (num.compareTo(BigInteger.ZERO) == 0)
+			return BigInteger.ONE;
+		if (num.compareTo(BigInteger.ONE) > 0) {
+			return num.multiply(findFactorial(num.subtract(BigInteger.ONE)));
+		}
+		return num;
+	}
 }
