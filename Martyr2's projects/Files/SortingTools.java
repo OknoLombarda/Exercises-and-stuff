@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class SortingTools {
+class SortingTools {
 
 	public static <T extends Comparable<? super T>> void mergeSort(T[] array) {
 		T[] wArray = Arrays.copyOf(array, array.length);
@@ -37,10 +37,11 @@ public class SortingTools {
 	public static <T extends Comparable<? super T>> void bubbleSort(T[] array) {
 		T temp;
 		boolean isDone = false;
+		int iterations = array.length;
 		
 		while (!isDone) {
 			isDone = true;
-			for (int i = 1; i < array.length; i++) {
+			for (int i = 1; i < iterations; i++) {
 				if (array[i].compareTo(array[i - 1]) < 0) {
 					temp = array[i];
 					array[i] = array[i - 1];
@@ -48,6 +49,8 @@ public class SortingTools {
 					isDone = false;
 				}
 			}
+			iterations--;
 		}
 	}
 }
+
