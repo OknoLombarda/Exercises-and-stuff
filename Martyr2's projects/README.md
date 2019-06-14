@@ -142,7 +142,7 @@ Networking
 Classes
 ---------
 
-**Product Inventory Project** – Create an application which manages an inventory of products. Create a product class which has a price, id, and quantity on hand. Then create an inventory class which keeps track of various products and can sum up the inventory value.
+[**Product Inventory Project**](https://github.com/OknoLombarda/Exercises-and-stuff/tree/master/Martyr2's%20projects/Files/me/inventory) – Create an application which manages an inventory of products. Create a product class which has a price, id, and quantity on hand. Then create an inventory class which keeps track of various products and can sum up the inventory value.
 
 **Movie Store** – Manage video rentals and controls when videos are checked out, due to return, overdue fees and for added complexity create a summary of those accounts which are overdue for contact.
 
