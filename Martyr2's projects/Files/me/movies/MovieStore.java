@@ -49,7 +49,7 @@ public class MovieStore {
 				LocalDate now = LocalDate.now();
 				for (Map.Entry<String, LocalDate> entry : movies.entrySet()) {
 					if (entry.getValue().isBefore(now))
-						sb.append(entry.getKey()).append(": ").append(entry.getValue()).append("   \n");
+						sb.append("   ").append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
 				}
 			}
 		}
