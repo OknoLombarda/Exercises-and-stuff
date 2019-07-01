@@ -20,11 +20,9 @@ public class KnightMoves {
  
         for (int i = 0; i < BOARD_SIZE; i++) {
             for (int j = 0; j < BOARD_SIZE; j++) {
-                int x = i;
-                int y = j;
                 moves = new ArrayList<Point>();
-                moves.add(new Point(x, y));
-                moveKnight(moves, x, y);
+                moves.add(new Point(i, j));
+                moveKnight(moves, i, j);
             }
         }
  
