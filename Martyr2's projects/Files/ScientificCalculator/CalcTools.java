@@ -114,9 +114,9 @@ class CalcTools {
 		if (function.equals("ln"))
 			return Math.log(num);
 		if (function.equals("sin"))
-			return Math.asin(num);
+			return Math.sin(num);
 		if (function.equals("cos"))
-			return Math.acos(num);
+			return Math.cos(num);
 		if (function.equals("tan"))
 			return Math.tan(num);
 		if (function.equals("cot"))
