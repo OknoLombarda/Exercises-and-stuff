@@ -146,8 +146,6 @@ Classes
 
 [**Movie Store**](https://github.com/OknoLombarda/Exercises-and-stuff/tree/master/Martyr2's%20projects/Files/me/movies) – Manage video rentals and controls when videos are checked out, due to return, overdue fees and for added complexity create a summary of those accounts which are overdue for contact.
 
-**Class to Handle Large Numbers** – We know that the basic data types like integer, long, double, and floats only go so far. Create a class that can manage extremely large numbers like those used in space exploration.
-
 **Chart Making Class / API** – Create a class, or a set of classes, that generates bar charts, pie charts, histograms, and scatter plot charts. For added complexity, make this a service where people can connect to a web server, supply information and it returns a chart image for them in gif or jpg format.
 
 **Shape Area and Perimeter Classes** – Create an abstract class called “Shape” and then inherit from it other shapes like diamond, rectangle, circle, triangle etc. Then have each class override the area and perimeter functionality to handle each shape type.
