@@ -150,7 +150,7 @@ Classes
 
 **Shape Area and Perimeter Classes** – Create an abstract class called “Shape” and then inherit from it other shapes like diamond, rectangle, circle, triangle etc. Then have each class override the area and perimeter functionality to handle each shape type.
 
-**Matrix Class** – A class to manage matrices. Add, subtract and multiple matrices.
+[**Matrix Class**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/me/matrix/Matrix.java) – A class to manage matrices. Add, subtract and multiple matrices.
 
 **Josephus Problem** – Create a program which links together various node objects and then every Nth object is removed until you have one object left. This last object is the sole survivor. Look it up on Google under “Josephus Algorithm”
 
