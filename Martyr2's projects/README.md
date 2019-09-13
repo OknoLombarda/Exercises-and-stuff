@@ -29,7 +29,7 @@ Numbers
 
 [**Alarm Clock**](https://github.com/OknoLombarda/Exercises-and-stuff/tree/master/Martyr2's%20projects/Files/AlarmClock) – A simple clock where it plays a sound after X number of minutes/seconds or at a particular time.
 
-**Distance Between Two Cities** – Calculates the distance between two cities and allows the user to specify a unit of distance. This program may require finding coordinates for the cities like latitude and longitude.
+[**Distance Between Two Cities**](https://github.com/OknoLombarda/Exercises-and-stuff/tree/master/Martyr2's%20projects/Files/me/distcalc) – Calculates the distance between two cities and allows the user to specify a unit of distance. This program may require finding coordinates for the cities like latitude and longitude.
 
 [**Credit Card Validator**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/CardValidator.java) – Takes in a credit card number from a common credit card vendor (Visa, MasterCard, American Express, Discoverer) and validates it to make sure that it is a valid number (look into how credit cards use a checksum).
 
