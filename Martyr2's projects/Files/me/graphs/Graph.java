@@ -18,6 +18,10 @@ public class Graph {
     }
 
     public void addEdge(String edge) {
+	if (!edge.matches(".+-.+")) {
+		throw new IllegalArgumentException("Syntax error (" + edge + ")");
+	}
+
         String[] vert = edge.split("-");
         addNode(vert[0], vert[1]);
         addNode(vert[1], vert[0]);
