@@ -1,9 +1,6 @@
 package me.graphs;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Map;
+import java.util.*;
 
 public class Graph {
     private HashMap<String, LinkedList<String>> vertices;
@@ -18,9 +15,9 @@ public class Graph {
     }
 
     public void addEdge(String edge) {
-	if (!edge.matches(".+-.+")) {
-		throw new IllegalArgumentException("Syntax error (" + edge + ")");
-	}
+        if (!edge.matches(".+-.+")) {
+            throw new IllegalArgumentException("Syntax error (" + edge + ")");
+        }
 
         String[] vert = edge.split("-");
         addNode(vert[0], vert[1]);
@@ -45,6 +42,20 @@ public class Graph {
             nodes.add(v2);
             vertices.put(v1, nodes);
         }
+    }
+
+    public HashMap<String, LinkedList<String>> getVertices() { return vertices; }
+
+    public int getAmountOfEdges() {
+        HashSet<Integer> edges = new HashSet<>();
+        int hash = 0;
+        for (Map.Entry<String, LinkedList<String>> entry : vertices.entrySet()) {
+            hash = entry.getKey().hashCode();
+            for (String v : entry.getValue()) {
+                edges.add(hash + v.hashCode());
+            }
+        }
+        return edges.size();
     }
 
     public String toString() {
