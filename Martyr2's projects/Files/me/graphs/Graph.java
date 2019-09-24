@@ -1,83 +1,92 @@
 package me.graphs;
 
-import java.io.IOException;
-import java.nio.file.Paths;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Map;
 
-public class EulerianPath {
-    public static void main(String[] args) {
-        Graph graph = new Graph();
-        if (args.length > 0) {
-            try (Scanner sc = new Scanner(Paths.get(args[0]), "UTF-8")) {
-                while (sc.hasNextLine()) {
-                    graph.addEdges(sc.nextLine().split("\\s+"));
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
+public class Graph {
+    private HashMap<String, LinkedList<String>> vertices;
+
+    public Graph() {
+        vertices = new HashMap<>();
+    }
+
+    public Graph(String... edges) {
+        this();
+        addEdges(edges);
+    }
+
+    public void addEdge(String edge) {
+	if (!edge.matches(".+-.+")) {
+		throw new IllegalArgumentException("Syntax error (" + edge + ")");
+	}
+
+        String[] vert = edge.split("-");
+        addNode(vert[0], vert[1]);
+        addNode(vert[1], vert[0]);
+    }
+
+    public void addEdges(String... edges) {
+        for (String edge : edges) {
+            addEdge(edge);
+        }
+    }
+
+    private void addNode(String v1, String v2) {
+        LinkedList<String> nodes;
+        if (vertices.containsKey(v1)) {
+            nodes = vertices.get(v1);
+            if (!nodes.contains(v2)) {
+                nodes.add(v2);
             }
         } else {
-            fillGraph(graph);
-        }
-
-        ArrayList<LinkedHashMap<Integer, String>> paths = new ArrayList<>();
-        for (Map.Entry<String, LinkedList<String>> entry : graph.getVertices().entrySet()) {
-            walkPath(entry.getKey(), graph, new LinkedHashMap<Integer, String>(), paths);
-        }
-
-        if (paths.size() == 0) {
-            System.out.println("Eulerian path is not possible for this graph");
-            System.exit(0);
-        }
-
-        LinkedHashMap<Integer, String> shortest = null;
-        for (LinkedHashMap<Integer, String> map : paths) {
-            if (shortest == null || map.size() > shortest.size()) {
-                shortest = map;
-            }
-        }
-
-        System.out.println("The shortest path:");
-        for (String s : shortest.values()) {
-            System.out.println(s);
+            nodes = new LinkedList<>();
+            nodes.add(v2);
+            vertices.put(v1, nodes);
         }
     }
 
-    public static void walkPath(String vertex, Graph graph, LinkedHashMap<Integer, String> moves, ArrayList<LinkedHashMap<Integer, String>> paths) {
-        LinkedHashMap<Integer, String> save = new LinkedHashMap<>(moves);
-        boolean moved = false;
-        int hash = 0;
-
-        for (String v : graph.getVertices().get(vertex)) {
-            if (moves.size() != save.size()) {
-                moves = new LinkedHashMap<Integer, String>();
-                moves.putAll(save);
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("{ ");
+        LinkedList<String> nodes;
+        Iterator<String> iter;
+        boolean first = true;
+        for (Map.Entry<String, LinkedList<String>> entry : vertices.entrySet()) {
+            if (first) {
+                first = false;
+            } else {
+                sb.append(", ");
             }
-            hash = vertex.hashCode() + v.hashCode();
-            if (!moves.containsKey(hash)) {
-                moved = true;
-                moves.put(hash, vertex.concat("-").concat(v));
-                walkPath(v, graph, moves, paths);
-            }
-        }
-
-        if (!moved && moves.size() == graph.getAmountOfEdges()) {
-            paths.add(moves);
-        }
-    }
-
-    public static void fillGraph(Graph graph) {
-        try (Scanner in = new Scanner(System.in)) {
-            String line;
-            boolean done = false;
-            while (!done) {
-                System.out.print("Enter link ('Q' to quit): ");
-                line = in.nextLine();
-                if (line.equalsIgnoreCase("q")) {
-                    done = true;
-                } else {
-                    graph.addEdge(line);
+            sb.append(entry.getKey()).append(":[");
+            nodes = entry.getValue();
+            iter = nodes.iterator();
+            while (iter.hasNext()) {
+                sb.append(iter.next());
+                if (iter.hasNext()) {
+                    sb.append(";");
                 }
             }
+            sb.append("]");
         }
+        sb.append(" }");
+        return sb.toString();
+    }
+
+    public boolean equals(Object other) {
+        if (this == other)
+            return true;
+        if (other == null)
+            return false;
+        if (getClass() != other.getClass())
+            return false;
+
+        Graph og = (Graph) other;
+        return vertices.equals(og.vertices);
+    }
+
+    public int hashCode() {
+        return vertices.hashCode() * 33;
     }
 }
