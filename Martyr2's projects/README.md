@@ -61,7 +61,7 @@ Graphs
 
 [**Eulerian Path**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/me/graphs/EulerianPath.java) - Create a program which will take as an input a graph and output either a Eulerian path or a Eulerian cycle, or state that it is not possible.  A Eulerian Path starts at one node and traverses every edge of a graph  through every node and finishes at another node.  A Eulerian cycle is a eulerian Path that starts and finishes at the same node.
 
-**Connected Graph** - Create a program which takes a graph as an input and outputs whether every node is connected or not.
+[**Connected Graph**](https://github.com/OknoLombarda/Exercises-and-stuff/blob/master/Martyr2's%20projects/Files/me/graphs/ConnectedGraph.java) - Create a program which takes a graph as an input and outputs whether every node is connected or not.
 
 **Dijkstra’s Algorithm** - Create a program that finds the shortest path through a graph using its edges.
 
