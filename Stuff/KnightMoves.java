@@ -1,13 +1,16 @@
 import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Iterator;
  
 import javax.swing.BorderFactory;
+import javax.swing.SwingConstants;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JLabel;
  
 public class KnightMoves {
     public static final int BOARD_SIZE = 8;
@@ -32,11 +35,15 @@ public class KnightMoves {
             f.setLocationRelativeTo(null);
             f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             f.setLayout(new GridLayout(BOARD_SIZE, BOARD_SIZE));
-            JPanel[][] fields = new JPanel[BOARD_SIZE][BOARD_SIZE];
+            JLabel[][] fields = new JLabel[BOARD_SIZE][BOARD_SIZE];
             for (int i = 0; i < BOARD_SIZE; i++) {
                 for (int j = 0; j < BOARD_SIZE; j++) {
-                    fields[i][j] = new JPanel();
-                    fields[i][j].setBackground(Color.white);
+                    fields[i][j] = new JLabel();
+		    fields[i][j].setHorizontalAlignment(SwingConstants.CENTER);
+		    fields[i][j].setOpaque(true);
+		    fields[i][j].setFont(new Font(Font.MONOSPACED, Font.BOLD, 20));
+                    fields[i][j].setBackground(Color.WHITE);
+		    fields[i][j].setForeground(Color.WHITE);
                     fields[i][j].setBorder(BorderFactory.createLineBorder(Color.BLACK));
                     f.add(fields[i][j]);
                 }
@@ -45,10 +52,12 @@ public class KnightMoves {
  
             Thread t = new Thread(() -> {
                 Iterator<Point> iter = solutions.get(0).iterator();
+		int count = 1;
 
                 while (iter.hasNext()) {
                     Point p = iter.next();
                     fields[p.x][p.y].setBackground(Color.DARK_GRAY);
+		    fields[p.x][p.y].setText(String.valueOf(count++));
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
