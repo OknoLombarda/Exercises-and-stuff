@@ -25,7 +25,7 @@ public class AlarmClockFrame extends JFrame {
 	private static final int WIDTH = 300;
 	private static final int HEIGHT = 123;
 	
-	private final ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();;
+	private final ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 	
 	private JButton alarmClock;
 	private JButton timer;
