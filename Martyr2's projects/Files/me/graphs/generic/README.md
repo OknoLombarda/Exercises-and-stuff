@@ -20,6 +20,7 @@ MW DOWN — zoom out
 
 (be careful, the screen is cleared when zoomed)
 
+<br>
 
 LMB — Left Mouse Button
 
