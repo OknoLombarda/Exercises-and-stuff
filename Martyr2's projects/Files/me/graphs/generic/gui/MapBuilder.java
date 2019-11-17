@@ -211,7 +211,7 @@ public class MapBuilder extends JPanel {
             selected.removeIf(f -> true);
             source = null;
             target = null;
-            path.removeIf(f -> true);
+            path = null;
             repaint();
         }
     }
